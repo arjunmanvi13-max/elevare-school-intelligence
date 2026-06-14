@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const services = [
   {
     name: "Quantum360",
@@ -59,31 +61,33 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8f5ef] text-[#16231f]">
       <section className="border-b border-[#ded7ca] bg-[#fbfaf7]">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+  <Image
+  src="/elevare-logo.png"
+  alt="Elevare"
+  width={260}
+  height={55}
+  priority
+  className="h-auto w-[260px] mix-blend-multiply"
+/>
+
+  <a
+    href="#contact"
+    className="rounded-full bg-[#0f2d25] px-8 py-4 text-sm font-semibold text-white transition hover:bg-[#0b221d]"
+  >
+    Request a Strategy Call
+  </a>
+</nav>
+
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-4 pb-20 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
-            <p className="text-xl font-semibold tracking-tight">
-              Elevare School Intelligence
-            </p>
-            <p className="text-sm text-[#6f746f]">
-              Evaluation ecosystems for future-ready schools
-            </p>
-          </div>
+            
 
-          <a
-            href="#contact"
-            className="rounded-full bg-[#172d27] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#0f211c]"
-          >
-            Request a Strategy Call
-          </a>
-        </nav>
+<p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
+  AI-enabled evaluation for premium schools
+</p>
 
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:py-28">
-          <div>
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
-              AI-enabled evaluation for premium schools
-            </p>
-
-            <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-[#13221e] md:text-7xl">
+            <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-[#13221e] md:text-6xl">
               Turn school data into institutional intelligence.
             </h1>
 
