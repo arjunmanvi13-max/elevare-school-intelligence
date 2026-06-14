@@ -30,7 +30,7 @@ const services = [
     ],
   },
   {
-    name: "PrecisionEval",
+    name: "Precision Eval",
     title: "Modular Diagnostic Labs",
     idealFor:
       "Schools needing a sharp, time-bound diagnostic in one or two focus areas.",
@@ -165,6 +165,69 @@ export default function Home() {
             If your school is asking, “How do we prove and improve quality?”,
             Elevare is designed for you.
           </p>
+        </div>
+      </section>
+
+            <section className="bg-white px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
+              How Elevare Works
+            </p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+              On-site evaluation. Custom program design. Practical implementation.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#4f5c56]">
+              Elevare is not a remote reporting exercise. The engagement begins
+              inside the school, with direct observation, leadership conversations,
+              teacher interviews, process reviews and evidence-based evaluation.
+              From there, Elevare designs a practical evaluation program for your
+              context and trains your team to implement it with confidence.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-5">
+            {[
+              {
+                step: "01",
+                title: "Visit the school",
+                body: "Elevare physically visits the campus to understand the school environment, leadership priorities and operating reality.",
+              },
+              {
+                step: "02",
+                title: "Conduct interviews",
+                body: "Structured conversations with leadership, coordinators, teachers and stakeholders uncover what is working and where clarity is needed.",
+              },
+              {
+                step: "03",
+                title: "Evaluate and assess",
+                body: "Policies, classroom practice, appraisal systems, assessment data and school processes are reviewed using research-based tools.",
+              },
+              {
+                step: "04",
+                title: "Create the program",
+                body: "Elevare designs a custom evaluation framework with KPIs, KRAs, tools, templates and review rhythms for the school.",
+              },
+              {
+                step: "05",
+                title: "Train implementation",
+                body: "Your team is trained to run the program independently so the system continues beyond the consulting engagement.",
+              },
+            ].map((item) => (
+              <div
+                key={item.step}
+                className="rounded-3xl border border-[#ded7ca] bg-[#f8f5ef] p-6"
+              >
+                <p className="text-sm font-semibold text-[#9a7338]">
+                  {item.step}
+                </p>
+                <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-[#4f5c56]">
+                  {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
