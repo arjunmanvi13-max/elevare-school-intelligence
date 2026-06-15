@@ -61,25 +61,24 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8f5ef] text-[#16231f]">
       <section className="border-b border-[#ded7ca] bg-[#fbfaf7]">
-       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 pt-6 pb-2">
   <Image
-  src="/elevare-logo.png"
-  alt="Elevare"
-  width={260}
-  height={55}
-  priority
-  className="h-auto w-[260px] mix-blend-multiply"
-/>
+    src="/elevare-logo.png"
+    alt="Elevare"
+    width={260}
+    height={80}
+    priority
+    className="h-auto w-[200px] -ml-6 mix-blend-multiply md:w-[240px]"
+  />
 
   <a
     href="#contact"
-    className="rounded-full bg-[#0f2d25] px-8 py-4 text-sm font-semibold text-white transition hover:bg-[#0b221d]"
+    className="hidden rounded-full bg-[#172d27] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#0f211c] md:inline-flex"
   >
     Request a Strategy Call
   </a>
 </nav>
-
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-4 pb-20 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-0 pb-20 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             
 
@@ -87,7 +86,7 @@ export default function Home() {
   AI-enabled evaluation for premium schools
 </p>
 
-            <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-[#13221e] md:text-6xl">
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-tight text-[#13221e] md:text-6xl">
               Turn school data into institutional intelligence.
             </h1>
 
@@ -100,7 +99,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="rounded-full bg-[#172d27] px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-[#0f211c]"
+                className="rounded-full bg-[#172d27] px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-[#0f211c] sm:w-auto"
               >
                 Book a Strategy Call
               </a>
@@ -113,7 +112,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-[#ded7ca] bg-white p-8 shadow-sm">
+          <div className="hidden rounded-[2rem] border border-[#ded7ca] bg-white p-8 shadow-sm lg:block">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#9a7338]">
               Built for leadership teams
             </p>
@@ -357,7 +356,7 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-[#4f5c56]">
               Share a few details about your school and current evaluation
               practices. Elevare will recommend the most suitable entry tier:
-              Quantum360, EduMetric or PrecisionEval.
+              Quantum360, EduMetric or Precision Eval.
             </p>
           </div>
 
