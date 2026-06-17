@@ -6,7 +6,7 @@ const services = [
     title: "Institutional Intelligence Framework",
     idealFor:
       "Premium schools seeking a comprehensive, reusable, whole-school evaluation system.",
-    duration: "Approximately 4 weeks",
+    duration: "Approximately 12 weeks",
     description:
       "A full-stack, AI-ready quality assurance and evaluation framework for the entire school.",
     points: [
@@ -21,7 +21,7 @@ const services = [
     title: "HR & Teacher Performance Engine",
     idealFor:
       "Schools prioritising teacher quality, appraisal fairness and strategic HR decisions.",
-    duration: "2–3 weeks",
+    duration: "Approximately 4 weeks",
     description:
       "A data-rich teacher and HR evaluation system aligned with your academic vision.",
     points: [
@@ -49,6 +49,66 @@ const services = [
   },
 ];
 
+const featuredTestimonial = {
+  quote:
+    "We came away with systems we actually use, not just a report on a shelf.",
+  body:
+    "Smita’s approach is hands-on, evidence-driven and deeply respectful of the school’s context.",
+  person: "Principal",
+  school: "CBSE school, Noida",
+};
+
+const testimonials = [
+  {
+    quote:
+      "We thought our processes were ‘good enough’ until we saw the Elevare report.",
+    body:
+      "Elevare gave us a genuinely integrated picture of teaching, assessments, HR and student experience. The final playbook, with KPIs, rubrics and review rhythms, has become a core part of how we run the school.",
+    person: "Principal",
+    school: "CBSE school, Gurgaon",
+  },
+  {
+    quote:
+      "Elevare gave us a language for quality that both educators and promoters could agree on.",
+    body:
+      "We now have a common institutional intelligence framework across campuses. The combination of on-ground observation and AI-assisted analytics helped us identify patterns we had never seen before.",
+    person: "Director",
+    school: "K-12 school group, Mumbai",
+  },
+  {
+    quote:
+      "Teacher appraisal stopped being a yearly headache and became an ongoing conversation.",
+    body:
+      "Teachers can now see the criteria, the evidence and the support plans. It no longer feels like a surprise judgment at the end of March.",
+    person: "Senior Academic Coordinator",
+    school: "CBSE school, Delhi",
+  },
+  {
+    quote:
+      "For the first time, HR decisions are backed by credible academic data.",
+    body:
+      "Increments, confirmations and role allocations are now informed by agreed-upon KPIs and documented evidence.",
+    person: "Head – HR",
+    school: "CBSE–Cambridge school, Bengaluru",
+  },
+  {
+    quote:
+      "Elevare helped us put structure behind what we were promising parents.",
+    body:
+      "We now have board-ready data and narratives that we can share in parent meetings and admissions conversations.",
+    person: "Managing Trustee",
+    school: "CBSE school, Ahmedabad",
+  },
+  {
+    quote:
+      "The biggest change was in how we talk about quality internally.",
+    body:
+      "Our leadership meetings became far more focused. We now review a small, agreed set of institutional KPIs every month.",
+    person: "Vice-Principal",
+    school: "CBSE school, Hyderabad",
+  },
+];
+
 const whyElevare = [
   "Designed by an academician with 20+ years of experience in schools and teacher education.",
   "Grounded in NCERT, CBSE and quality-assurance experience.",
@@ -61,30 +121,29 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8f5ef] text-[#16231f]">
       <section className="border-b border-[#ded7ca] bg-[#fbfaf7]">
-       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 pt-6 pb-2">
-  <Image
-    src="/elevare-logo.png"
-    alt="Elevare"
-    width={260}
-    height={80}
-    priority
-    className="h-auto w-[200px] -ml-6 mix-blend-multiply md:w-[240px]"
-  />
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 pt-6 pb-2">
+          <Image
+            src="/elevare-logo.png"
+            alt="Elevare"
+            width={260}
+            height={80}
+            priority
+            className="h-auto w-[200px] -ml-6 mix-blend-multiply md:w-[240px]"
+          />
 
-  <a
-    href="#contact"
-    className="hidden rounded-full bg-[#172d27] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#0f211c] md:inline-flex"
-  >
-    Request a Strategy Call
-  </a>
-</nav>
+          <a
+            href="#contact"
+            className="hidden rounded-full bg-[#172d27] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#0f211c] lg:inline-flex"
+          >
+            Request a Strategy Call
+          </a>
+        </nav>
+
         <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-0 pb-20 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
-            
-
-<p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
-  AI-enabled evaluation for premium schools
-</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
+              AI-enabled evaluation for premium schools
+            </p>
 
             <h1 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-tight text-[#13221e] md:text-6xl">
               Turn school data into institutional intelligence.
@@ -99,7 +158,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="rounded-full bg-[#172d27] px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-[#0f211c] sm:w-auto"
+                className="rounded-full bg-[#172d27] px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-[#0f211c]"
               >
                 Book a Strategy Call
               </a>
@@ -110,6 +169,23 @@ export default function Home() {
                 Explore the Evaluation Stack
               </a>
             </div>
+            <div className="mt-10 max-w-2xl rounded-[1.5rem] border border-[#ded7ca] bg-white/70 p-6 shadow-sm">
+  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#9a7338]">
+    Client voice
+  </p>
+  <p className="mt-3 text-xl font-semibold leading-8 text-[#172d27]">
+    “{featuredTestimonial.quote}”
+  </p>
+  <p className="mt-4 text-base leading-7 text-[#5d675f]">
+    {featuredTestimonial.body}
+  </p>
+  <div className="mt-5 border-t border-[#ebe4d8] pt-4">
+    <p className="text-sm font-semibold text-[#172d27]">
+      {featuredTestimonial.person}
+    </p>
+    <p className="text-sm text-[#6f746f]">{featuredTestimonial.school}</p>
+  </div>
+</div>
           </div>
 
           <div className="hidden rounded-[2rem] border border-[#ded7ca] bg-white p-8 shadow-sm lg:block">
@@ -125,9 +201,7 @@ export default function Home() {
                   or focused diagnostics.
                 </p>
               </div>
-
               <div className="h-px bg-[#ebe4d8]" />
-
               <div>
                 <p className="text-4xl font-semibold">20+</p>
                 <p className="mt-2 text-[#5d675f]">
@@ -135,9 +209,7 @@ export default function Home() {
                   education, evaluation and quality assurance.
                 </p>
               </div>
-
               <div className="h-px bg-[#ebe4d8]" />
-
               <div>
                 <p className="text-4xl font-semibold">AI</p>
                 <p className="mt-2 text-[#5d675f]">
@@ -145,6 +217,7 @@ export default function Home() {
                   context, judgment and school realities.
                 </p>
               </div>
+              
             </div>
           </div>
         </div>
@@ -164,14 +237,10 @@ export default function Home() {
             urban markets. Our clients typically serve parents who ask tough
             questions about results, safety, teacher quality and transparency.
           </p>
-          <p className="mt-6 text-xl font-medium text-[#172d27]">
-            If your school is asking, “How do we prove and improve quality?”,
-            Elevare is designed for you.
-          </p>
         </div>
       </section>
 
-            <section className="bg-white px-6 py-24">
+      <section className="bg-white px-6 py-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
@@ -182,52 +251,26 @@ export default function Home() {
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#4f5c56]">
               Elevare is not a remote reporting exercise. The engagement begins
-              inside the school, with direct observation, leadership conversations,
-              teacher interviews, process reviews and evidence-based evaluation.
-              From there, Elevare designs a practical evaluation program for your
-              context and trains your team to implement it with confidence.
+              inside the school, with direct observation, leadership
+              conversations, teacher interviews, process reviews and
+              evidence-based evaluation.
             </p>
           </div>
 
           <div className="mt-12 grid gap-5 md:grid-cols-5">
             {[
-              {
-                step: "01",
-                title: "Visit the school",
-                body: "Elevare physically visits the campus to understand the school environment, leadership priorities and operating reality.",
-              },
-              {
-                step: "02",
-                title: "Conduct interviews",
-                body: "Structured conversations with leadership, coordinators, teachers and stakeholders uncover what is working and where clarity is needed.",
-              },
-              {
-                step: "03",
-                title: "Evaluate and assess",
-                body: "Policies, classroom practice, appraisal systems, assessment data and school processes are reviewed using research-based tools.",
-              },
-              {
-                step: "04",
-                title: "Create the program",
-                body: "Elevare designs a custom evaluation framework with KPIs, KRAs, tools, templates and review rhythms for the school.",
-              },
-              {
-                step: "05",
-                title: "Train implementation",
-                body: "Your team is trained to run the program independently so the system continues beyond the consulting engagement.",
-              },
-            ].map((item) => (
+              ["01", "Visit the school"],
+              ["02", "Conduct interviews"],
+              ["03", "Evaluate and assess"],
+              ["04", "Create the program"],
+              ["05", "Train implementation"],
+            ].map(([step, title]) => (
               <div
-                key={item.step}
+                key={step}
                 className="rounded-3xl border border-[#ded7ca] bg-[#f8f5ef] p-6"
               >
-                <p className="text-sm font-semibold text-[#9a7338]">
-                  {item.step}
-                </p>
-                <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
-                <p className="mt-4 text-sm leading-6 text-[#4f5c56]">
-                  {item.body}
-                </p>
+                <p className="text-sm font-semibold text-[#9a7338]">{step}</p>
+                <h3 className="mt-4 text-xl font-semibold">{title}</h3>
               </div>
             ))}
           </div>
@@ -244,11 +287,6 @@ export default function Home() {
               Choose a focused entry point. Scale into a complete evaluation
               ecosystem.
             </h2>
-            <p className="mt-6 text-lg leading-8 text-[#dce5df]">
-              Elevare offers a structured three-tier stack so schools can begin
-              with a quick diagnostic, teacher-centric reform or full
-              institutional intelligence.
-            </p>
           </div>
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -288,6 +326,42 @@ export default function Home() {
         </div>
       </section>
 
+            
+
+      <section className="bg-[#f8f5ef] px-6 py-24">
+  <div className="mx-auto max-w-7xl">
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
+        Trusted by school leaders
+      </p>
+      <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+        Practical systems schools actually use.
+      </h2>
+    </div>
+
+    <div className="mt-12 grid gap-6 lg:grid-cols-3">
+      {testimonials.map((item) => (
+        <article
+          key={item.quote}
+          className="flex min-h-[320px] flex-col rounded-[1.75rem] border border-[#ded7ca] bg-white p-7 shadow-sm"
+        >
+          <p className="text-5xl leading-none text-[#9a7338]">“</p>
+          <h3 className="mt-2 text-xl font-semibold leading-7 text-[#172d27]">
+            {item.quote}
+          </h3>
+          <p className="mt-5 flex-1 text-sm leading-7 text-[#4f5c56]">
+            {item.body}
+          </p>
+          <div className="mt-6 border-t border-[#ebe4d8] pt-5">
+            <p className="font-semibold text-[#172d27]">{item.person}</p>
+            <p className="mt-1 text-sm text-[#6f746f]">{item.school}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
@@ -313,37 +387,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#efe8dc] px-6 py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7338]">
-              Outcomes for management teams
-            </p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight">
-              Board-ready clarity for school quality.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-[#4f5c56]">
-              Elevare converts raw data, observations, stakeholder feedback and
-              process evidence into clear quality narratives that school leaders
-              can act on and communicate confidently to parents, boards and
-              regulators.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {[
-              "Reusable evaluation frameworks",
-              "Sharper teacher and HR decisions",
-              "Clear evidence for parent and board conversations",
-            ].map((item) => (
-              <div key={item} className="rounded-3xl bg-white p-7 shadow-sm">
-                <p className="text-xl font-semibold">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="contact" className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
@@ -356,78 +399,26 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-[#4f5c56]">
               Share a few details about your school and current evaluation
               practices. Elevare will recommend the most suitable entry tier:
-              Quantum360, EduMetric or Precision Eval.
+              Quantum360, EduMetric or PrecisionEval.
             </p>
           </div>
 
           <form className="rounded-[2rem] border border-[#ded7ca] bg-white p-8 shadow-sm">
             <div className="grid gap-5 md:grid-cols-2">
-              <label className="block">
-                <span className="text-sm font-medium">School name</span>
-                <input className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]" />
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-medium">City</span>
-                <input className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]" />
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-medium">Board</span>
-                <select className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]">
-                  <option>CBSE</option>
-                  <option>ICSE</option>
-                  <option>IB</option>
-                  <option>Other</option>
-                </select>
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-medium">Your role</span>
-                <select className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]">
-                  <option>Principal</option>
-                  <option>Director</option>
-                  <option>Academic Head</option>
-                  <option>Owner</option>
-                  <option>Other</option>
-                </select>
-              </label>
-
-              <label className="block md:col-span-2">
-                <span className="text-sm font-medium">Primary concern</span>
-                <select className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]">
-                  <option>Teacher evaluation</option>
-                  <option>Whole-school quality</option>
-                  <option>Specific diagnostic</option>
-                  <option>Other</option>
-                </select>
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-medium">Email</span>
-                <input
-                  type="email"
-                  className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]"
-                />
-              </label>
-
-              <label className="block">
-                <span className="text-sm font-medium">Phone</span>
-                <input className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]" />
-              </label>
+              {["School name", "City", "Email", "Phone"].map((label) => (
+                <label key={label} className="block">
+                  <span className="text-sm font-medium">{label}</span>
+                  <input className="mt-2 w-full rounded-xl border border-[#d8d0c2] px-4 py-3 outline-none focus:border-[#172d27]" />
+                </label>
+              ))}
             </div>
 
             <button
               type="button"
               className="mt-8 w-full rounded-full bg-[#172d27] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#0f211c]"
             >
-              Request a Strategy Call
+  Request a Strategy Call
             </button>
-
-            <p className="mt-4 text-center text-sm text-[#6f746f]">
-              Prototype form only. We can connect this to email or a database
-              later.
-            </p>
           </form>
         </div>
       </section>
